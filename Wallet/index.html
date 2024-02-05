@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>PayPal</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">PayPal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#individual">INDIVIDUAL</a></li>
+          <li><a href="#business">BUSINESS</a></li>
+          <li><a href="#partners">PARTNERS"</a></li>
+          <li><a href="#usefulinfo">USEFUL INFO</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">PayPal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#individual" onclick="toggleMenu()">INDIVIDUAL</a></li>
+          <li><a href="#business" onclick="toggleMenu()">BUSINESS</a></li>
+          <li><a href="#partners" onclick="toggleMenu()">PARTNERS"</a></li>
+          <li><a href="#usefulinfo" onclick="toggleMenu()">USEFUL INFO</a></li>
+        </div>
+      </div>
+    </nav>
+    <section class="headsection_text">
+      <p class="headsection_text">
+        Take care of you and yours at home, and we can take care of you online.
+      </p>
+    </section>
+  </body>
 </html>
