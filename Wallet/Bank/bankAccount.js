@@ -7,9 +7,10 @@ const day = currentDate.getDate();
 const hours = currentDate.getHours();
 
 class Bank {
-  constructor(owner, key, password) {
+  static id = 0;
+  constructor(owner, password) {
+    this.id += 1;
     this.owner = owner;
-    this.key = key;
     this.password = password;
     this.balance = 0;
     this.logs = [];
@@ -36,5 +37,8 @@ class Bank {
     } else {
       throw new Error("Cannot deposit 0 or lesser than 0.");
     }
+  }
+  getId() {
+    return this.id;
   }
 }
